@@ -1,0 +1,82 @@
+:root {
+  --black-base: #0f0e17;
+  --paragraph: #a7a9be;
+  --headline: #fffffe;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--black-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+iframe {
+  background: var(--headline);
+  width: 320px;
+  height: 568px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.set-url {
+  background: var(--headline);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  transition: color, background-color 1s;
+}
+
+.set-url picture {
+  padding: 8px;
+  display: flex;
+  width: 24px;
+}
+
+.set-url picture svg {
+  width: 24px;
+}
+
+.set-url input {
+  height: 34px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.set-url.active {
+  background: var(--black-base);
+}
+
+.set-url.active input {
+  color: var(--paragraph);
+}
+
+.set-url.active svg path {
+  fill: var(--paragraph);
+}
+
+.set-url.active:hover {
+  background: var(--headline);
+}
+
+.set-url.active:hover input {
+  color: var(--black-base);
+}
+
+.set-url.active:hover svg path {
+  fill: var(--black-base);
+}
