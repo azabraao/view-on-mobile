@@ -39,7 +39,7 @@ const viewOnMobile = {
     this.iframe.src = this.url;
     this.input.value = this.url;
     this.hideInput();
-    window.history.pushState("home", "View on Mobile", `/?url=${this.url}`);
+    window.history.pushState("home", "View on Mobile", `/view-on-mobile/?url=${this.url}`);
   },
   hideInput() {
     this.inputWrapper.classList.add("active");
