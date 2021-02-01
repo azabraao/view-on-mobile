@@ -111,9 +111,13 @@
           placeholder="https://www.awesome-site.com"
         />
       </div>
-
-      <iframe title="iframe" class="jsIframe" frameborder="0"> </iframe>
+      <div class="iframe-wrap jsIframeWrapper">
+        <div class="iframe-wrap__message jsMessage"></div>
+        <iframe id="iframe" title="iframe" class="jsIframe" frameborder="0"> </iframe>
+      </div>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="./script.js"></script>
   </body>

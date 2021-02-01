@@ -80,3 +80,23 @@ main {
 .set-url.active:hover svg path {
   fill: var(--black-base);
 }
+
+.iframe-wrap.got-cors iframe {
+  display: none;
+}
+
+.iframe-wrap .iframe-wrap__message {
+  display: none;
+}
+
+.iframe-wrap.got-cors .iframe-wrap__message {
+  padding: 32px;
+  font-size: 32px;
+  background: var(--headline);
+  color: var(--black-base);
+  line-height: 1.2;
+  display: block;
+}
+.iframe-wrap.got-cors .iframe-wrap__message span {
+  text-decoration: underline;
+}
