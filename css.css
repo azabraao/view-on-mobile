@@ -21,8 +21,8 @@ body {
 }
 iframe {
   background: var(--headline);
-  width: 320px;
-  height: 568px;
+  width: 414px;
+  height: 736px;
 }
 main {
   display: flex;
@@ -37,6 +37,7 @@ main {
   display: flex;
   align-items: center;
   transition: color, background-color 1s;
+  display: none;
 }
 
 .set-url picture {
